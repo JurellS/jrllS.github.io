@@ -1,0 +1,249 @@
+body{
+    box-sizing: border-box;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main{
+  /* border: 1px solid black; */
+  min-height: 120vh;
+  background-image: url("Images/bg2.png");
+  background-size: contain;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 6rem 2rem;
+ 
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  /* border: 1px solid black; */
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 8rem;
+  margin-right: 20px;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px; 
+  margin-right: 20px;
+  border-radius: 4px; /* optional: makes the hover background softer */
+  transition: all 0.3s ease; /* smooth transition for all changes */
+}
+
+.nav-links a:hover {
+ color: #241ae0;
+  background-color: white;
+}
+
+.container {
+  position: relative;       
+  width: 100%;
+  height: 100vh;            
+  background-color: #222;   
+}
+
+
+.main-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    /* border: 1px solid black; */
+    /* background-color: tomato; */
+    
+ 
+    .right-container{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+    /* border: 1px solid black; */
+
+
+     h2{
+        padding:25px;
+        font-size: 85pt;
+        text-align: LEFT;
+        align-items: center;
+        color: rgba(240, 255, 255, 0.511);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 0 0 5px rgba(255,255,255,0.5),
+             0 0 10px rgba(255,255,255,0.8),
+             0 0 20px rgba(255,255,255,0.6);
+
+     }
+ 
+     }
+     .left-container{
+       width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+    /* border: 1px solid black; */
+
+
+     h2{
+        padding: 30px;
+        font-size: 85pt;
+        text-align: right;
+        
+        text-shadow: 0 0 5px rgba(255,255,255,0.5),
+             0 0 10px rgba(255,255,255,0.8),
+             0 0 20px rgba(255,255,255,0.6);
+        color: rgba(240, 255, 255, 0.511);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+ 
+     }
+
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.right-container {
+z-index: 0;
+  top: 0;
+  left: 0;
+  width: 110%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s linear;
+}
+.left-container {
+z-index: 0;
+  top: 0;
+  left: 0;
+  width: 110%; 
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s linear;
+
+}
+
+ .img-container {
+   position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-img {
+     position: absolute;
+  top:60%;
+  left: 50%;
+  z-index:59;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  width: 45vw; /* adjust as needed */
+  height: auto; /* keeps proportions */
+   /* filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3))
+        drop-shadow(0 2px 4px rgba(0,0,0,0.2)); */
+} 
+.about-container{
+  display: flex;
+  min-height: 30vh;
+  background-color: white;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(Images/g.png);
+  background-size: cover;
+  background-position: center;
+}
+.about-cont{
+  z-index: 0;
+  top: 20%;
+  left: 0;
+  transition: transform 0.1s linear;
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  min-height: 80vh;
+ 
+
+
+  h2{
+    font-size: 50pt;
+    padding: 15px;
+    background-image: url(Images/selection.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+
+  p{
+    width: 60%;
+    font-size: 12pt;
+    text-align: center;
+
+    line-height: 1.6;
+    color: black;
+    
+  }
+}
+.about-image{
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 110%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s linear;
+
+
+  img{
+    padding: 10px;
+    width: 25rem;
+    margin-left: 100px;
+  }
+}
+
+.featured-works{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: WHITE;
+
+  img{
+    width: 10rem;
+
+  }
+
+}
+
+
