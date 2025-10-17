@@ -52,3 +52,5 @@ window.addEventListener('scroll', function() {
     const y = (window.innerHeight / 2 - e.clientY) / -40;
     bg2.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
   });
+
+  // Carousel functionality //
