@@ -112,7 +112,6 @@ nav {
         padding: 30px;
         font-size: 85pt;
         text-align: right;
-        
         text-shadow: 0 0 5px rgba(255,255,255,0.5),
              0 0 10px rgba(255,255,255,0.8),
              0 0 20px rgba(255,255,255,0.6);
@@ -166,9 +165,16 @@ z-index: 0;
   transition: transform 0.1s ease-out;
   width: 45vw; /* adjust as needed */
   height: auto; /* keeps proportions */
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
    /* filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3))
         drop-shadow(0 2px 4px rgba(0,0,0,0.2)); */
 } 
+
+ .home-img:hover {
+          filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.916))
+    }
+
+
 .about-container{
   display: flex;
   min-height: 30vh;
@@ -179,7 +185,33 @@ z-index: 0;
   background-image: url(Images/g.png);
   background-size: cover;
   background-position: center;
+
+  
+
+
 }
+   .elements{
+    position: absolute;
+    top: 110%;
+    width: 100vw;
+    min-height: auto;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+    .element2{
+    position: absolute;
+    top: 110%;
+    width: 100vw;
+    min-height: auto;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+
 .about-cont{
   z-index: 0;
   top: 20%;
@@ -192,12 +224,15 @@ z-index: 0;
   align-items: center;
   /* border: 1px solid black; */
   min-height: 80vh;
+
+ 
  
 
 
   h2{
     font-size: 50pt;
     padding: 15px;
+    text-align: center;
     background-image: url(Images/selection.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -205,12 +240,10 @@ z-index: 0;
 
   }
 
-
   p{
     width: 60%;
     font-size: 12pt;
     text-align: center;
-
     line-height: 1.6;
     color: black;
     
@@ -238,10 +271,11 @@ z-index: 0;
   align-items: center;
   justify-content: space-between;
   background-color: WHITE;
+  flex-direction: column;
+  
 
   img{
-    width: 10rem;
-
+    width: 15rem;
   }
 
 }
