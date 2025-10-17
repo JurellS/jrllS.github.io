@@ -1,0 +1,597 @@
+body{
+    box-sizing: border-box;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main{
+  /* border: 1px solid black; */
+  min-height: 120vh;
+  background-image: url("Images/bg2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 6rem 2rem;
+ 
+}
+
+/* 🌐 NAVBAR BASE STYLES */
+nav {
+  display: flex;
+  flex-direction: row;       /* keep everything in a single row */
+  align-items: center;       /* vertically center logo & buttons */
+  justify-content: center;   /* center the entire group horizontally */
+  gap: 4rem;                 /* space between logo and buttons */
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 30px;              /* smaller logo */
+  width: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;              /* optional, adjust based on your background */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;       /* keep buttons side-by-side */
+  gap: 3rem;                 /* space between buttons */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-links a:hover {
+  color: #241ae0;
+  background-color: white;
+}
+
+/* -------------------------------------- */
+/* 🔽 MEDIA QUERIES FOR RESPONSIVENESS 🔽 */
+/* -------------------------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+main{
+  background-size: cover;
+}
+
+  nav {
+    gap: 2.5rem;
+    padding: 15px 25px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  main{
+  background-size: cover;
+}
+  nav {
+    flex-wrap: wrap;          /* allow wrapping if needed */
+    gap: 1.5rem;
+    padding: 15px;
+  }
+
+  .logo img {
+    height: 22px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  main{
+  background-size: cover;
+}
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+}
+
+/* --- MAIN CONTAINER LAYOUT --- */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- LEFT & RIGHT CONTAINERS --- */
+.right-container,
+.left-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s linear;
+}
+
+/* --- HEADINGS --- */
+.right-container h2,
+.left-container h2 {
+  padding: 25px 30px;
+  font-size: 85pt;
+  color: rgba(240, 255, 255, 0.511);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(255,255,255,0.5),
+               0 0 10px rgba(255,255,255,0.8),
+               0 0 20px rgba(255,255,255,0.6);
+}
+
+.right-container h2 {
+  text-align: left;
+}
+
+.left-container h2 {
+  text-align: right;
+}
+
+.img-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------- */
+/* 🔽 MEDIA QUERIES FOR RESPONSIVENESS 🔽 */
+/* ----------------------------------------------------- */
+
+/* Large tablets / smaller laptops */
+@media (max-width: 1200px) {
+  .right-container h2,
+  .left-container h2 {
+    font-size: 65pt;
+  }
+
+  .main-container {
+    min-height: 70vh;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column; /* stack vertically */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right-container h2,
+  .left-container h2 {
+    font-size: 55pt;
+    text-align: center; /* center text instead of left/right */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+
+  .main-container {
+    flex-direction: column;
+    min-height: 60vh;
+  }
+
+  .right-container h2,
+  .left-container h2 {
+    font-size: 40pt;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .right-container h2,
+  .left-container h2 {
+    font-size: 28pt;
+    padding:2px;
+    line-height: 1.2;
+  }
+
+  .main-container {
+    min-height: 20vh;
+    flex-direction: row;
+  }
+
+  .img-container {
+    height: 350px;
+  }
+}
+
+
+.home-img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 59;
+  transform: translate(-50%, -50%);
+  width: 40vw; /* responsive base width */
+  height: auto; /* maintain aspect ratio */
+  transition: filter 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease-out;
+}
+
+/* Hover effect only on visible part */
+.home-img:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.916));
+}
+
+/* -------------------------------------- */
+/* 🔽 MEDIA QUERIES FOR RESPONSIVENESS 🔽 */
+/* -------------------------------------- */
+
+/* Large Tablets and small laptops */
+@media (max-width: 1200px) {
+  .home-img {
+    width: 50vw; /* slightly larger for smaller screens */
+    top: 58%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .home-img {
+    width: 60vw;
+    top: 55%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .home-img {
+    width: 70vw;
+    top: 90%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .home-img {
+    width: 75vw;  /* take most of the screen width */
+    top: 60%;
+  }
+}
+
+
+
+.about-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(Images/g.png);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+
+/* Floating/animated elements */
+.elements,
+.element2 {
+  position: absolute;
+  top: 110%;
+  width: 100vw;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 5s ease-in-out infinite;
+}
+
+.elements {
+  animation: float 2s ease-in-out infinite;
+}
+
+.element2 {
+  animation: float 2s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* Bigger, smoother up-and-down float */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px); /* moves up more */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* About content */
+.about-cont {
+  z-index: 0;
+  top: 20%;
+  left: 0;
+  transition: transform 0.1s linear;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about-cont h2 {
+  font-size: 50pt;
+  padding: 15px;
+  text-align: center;
+  background-image: url(Images/selection.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-cont p {
+  width: 60%;
+  font-size: 11pt;
+  text-align: center;
+  line-height: 1.6;
+  color: black;
+ font-family: 'Poppins', sans-serif;
+}
+
+/* About image */
+.about-image {
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 110%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s linear;
+}
+
+.about-image img {
+  padding: 10px;
+  width: 25rem;
+  margin-left: 100px;
+}
+
+/* ------------------------------------------------ */
+/* 🔽 MEDIA QUERIES FOR RESPONSIVENESS 🔽 */
+/* ------------------------------------------------ */
+
+/* Large tablets and small laptops */
+@media (max-width: 1200px) {
+  .about-cont {
+    padding: 0 60px;
+  }
+
+  .about-cont h2 {
+    font-size: 40pt;
+  }
+
+  .about-cont p {
+    width: 70%;
+    font-size: 11pt;
+  }
+
+  .about-image img {
+    width: 20rem;
+    margin-left: 50px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    min-height: 60vh;
+  }
+
+  .about-cont {
+    padding: 0 40px;
+  }
+
+  .about-cont h2 {
+    font-size: 32pt;
+  }
+
+  .about-cont p {
+    width: 80%;
+    font-size: 11pt;
+  }
+
+  .about-image img {
+    width: 18rem;
+    margin: 20px auto 0;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-cont {
+    padding: 0 25px;
+    min-height: 70vh;
+  }
+
+  .about-cont h2 {
+    font-size: 26pt;
+  }
+
+  .about-cont p {
+    width: 90%;
+    font-size: 10.5pt;
+  }
+
+  .about-image img {
+    width: 15rem;
+    margin: 10px auto;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .about-cont {
+    padding: 0 15px;
+    min-height: 80vh;
+  }
+
+  .about-cont h2 {
+    font-size: 22pt;
+  }
+
+  .about-cont p {
+    width: 95%;
+    font-size: 10pt;
+  }
+
+  .about-image img {
+    width: 12rem;
+    margin: 5px auto;
+  }
+}
+
+.featured-works {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  z-index: -99;
+}
+
+.featured-images {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured-images img {
+  width: 400px;
+  margin: 20px;
+}
+
+
+@media (max-width: 768px) {
+  /* CSS here applies only when screen is 768px wide or smaller */
+  body {
+    background-color: lightblue;
+  }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 9999;
+  top: 210%;
+}
+
+.marquee p {
+  display: inline-block;
+  font-size: 80pt;
+  animation: scroll 15s linear infinite;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-right: 100%; /* space between loops */
+}
+
+/* Seamless scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.tape{
+   width: 100%;
+   position: absolute;
+   z-index: 99;
+   top: 170%;
+ }
+
