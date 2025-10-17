@@ -279,7 +279,7 @@ main{
   left: 50%;
   z-index: 59;
   transform: translate(-50%, -50%);
-  width: 40vw; /* responsive base width */
+  min-width: auto; /* responsive base width */
   height: auto; /* maintain aspect ratio */
   transition: filter 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease-out;
 }
@@ -528,9 +528,7 @@ main{
 }
 
 .featured-works {
-   display: flex;
-  align-items: center;
-  justify-content: center;
+  
   position: relative;
   min-height: 100vh;
   z-index: -99;
@@ -586,7 +584,6 @@ main{
     transform: translateX(-50%);
   }
 }
-
 
 .tape{
    width: 100%;
