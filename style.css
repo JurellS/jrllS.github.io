@@ -326,8 +326,8 @@ main{
 /* Extra small devices */
 @media (max-width: 480px) {
   .home-img {
-    width: 150vw;  /* take most of the screen width */
-    top: 60%
+    width: 140vw;  /* take most of the screen width */
+    top: 45%
   }
 }
 
