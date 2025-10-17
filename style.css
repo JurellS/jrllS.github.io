@@ -326,8 +326,8 @@ main{
 /* Extra small devices */
 @media (max-width: 480px) {
   .home-img {
-    width: 100vw;  /* take most of the screen width */
-    top: 70%
+    width: 120vw;  /* take most of the screen width */
+    top: 50%
   }
 }
 
@@ -522,13 +522,13 @@ main{
   }
 
    .elements{
-    top: 110%;
+    top: 155%;
 
   }
 
 
 .element2 {
-    top: 160%;
+    top: 205%;
   
 }
 }
