@@ -255,7 +255,7 @@ main{
     
   }
   .img-container {
-    height: 900px;
+    height: 800px;
   }
 }
 
@@ -327,7 +327,7 @@ main{
 @media (max-width: 480px) {
   .home-img {
     width: 120vw;  /* take most of the screen width */
-    top: 55%
+    top: 60%
   }
 }
 
@@ -522,13 +522,13 @@ main{
   }
 
    .elements{
-    top: 100%;
+    top: 115%;
 
   }
 
 
 .element2 {
-    top: 150%;
+    top: 165%;
   
 }
 
@@ -632,7 +632,7 @@ main{
    height: 50%;
    position: absolute;
    z-index: 99;
-   top: 155%;
+   top: 170%;
 
  }
  .marquee {
@@ -642,10 +642,10 @@ main{
   box-sizing: border-box;
   position: absolute;
   z-index: 999;
-  top: 176%;
+  top: 190%;
 }
  .marquee p {
-  font-size: 20pt;
+  font-size: 25pt;
   animation: scroll 15s linear infinite;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
