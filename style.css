@@ -249,7 +249,7 @@ main{
 
   .right-container h2,
   .left-container h2 {
-    font-size: 70pt;
+    font-size: 90pt;
     padding: 15px;
     text-align: center;
     
@@ -263,7 +263,7 @@ main{
 @media (max-width: 480px) {
   .right-container h2,
   .left-container h2 {
-    font-size: 40pt;
+    font-size: 70pt;
     padding:2px;
     line-height: 1.2;
   }
@@ -528,7 +528,7 @@ main{
 
 
 .element2 {
-    top: 165%;
+    top: 175%;
   
 }
 
@@ -633,7 +633,7 @@ main{
    height: 50%;
    position: absolute;
    z-index: 99;
-   top: 165%;
+   top: 180%;
      transform: scaleX(-1);
 
  }
@@ -644,7 +644,7 @@ main{
   box-sizing: border-box;
   position: absolute;
   z-index: 999;
-  top: 185%;
+  top: 200%;
 }
  .marquee p {
   font-size: 25pt;
