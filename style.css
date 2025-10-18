@@ -182,7 +182,7 @@ main{
 .left-container h2 {
   padding: 25px 30px;
   font-size: 85pt;
-  color: rgba(240, 255, 255, 0.511);
+  color: rgb(255, 0, 0);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 0 0 5px rgba(255,255,255,0.5),
                0 0 10px rgba(255,255,255,0.8),
