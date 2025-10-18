@@ -182,7 +182,7 @@ main{
 .left-container h2 {
   padding: 25px 30px;
   font-size: 85pt;
-  color: rgb(255, 0, 0);
+  color: rgba(255, 255, 255, 0.904);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 0 0 5px rgba(255,255,255,0.5),
                0 0 10px rgba(255,255,255,0.8),
@@ -263,7 +263,7 @@ main{
 @media (max-width: 480px) {
   .right-container h2,
   .left-container h2 {
-    font-size: 60pt;
+    font-size: 40pt;
     padding:2px;
     line-height: 1.2;
   }
@@ -538,7 +538,7 @@ main{
 @media (max-width: 480px) {
   .about-cont {
     padding: 0 15px;
-    min-height: 80vh;
+    min-height: 100vh;
   }
 
   .about-cont h2 {
@@ -623,6 +623,7 @@ main{
    position: absolute;
    z-index: 99;
    top: 170%;
+     transform: scaleX(-1);
  }
 
  @media (max-width: 480px) {
@@ -632,7 +633,8 @@ main{
    height: 50%;
    position: absolute;
    z-index: 99;
-   top: 170%;
+   top: 165%;
+     transform: scaleX(-1);
 
  }
  .marquee {
@@ -642,7 +644,7 @@ main{
   box-sizing: border-box;
   position: absolute;
   z-index: 999;
-  top: 190%;
+  top: 185%;
 }
  .marquee p {
   font-size: 25pt;
