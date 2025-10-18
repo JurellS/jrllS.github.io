@@ -274,7 +274,7 @@ main{
   }
 
   .img-container {
-    height:600px;
+    height:700px;
   }
 }
 
@@ -326,8 +326,8 @@ main{
 /* Extra small devices */
 @media (max-width: 480px) {
   .home-img {
-    width: 110vw;  /* take most of the screen width */
-    top: 65%
+    width: 120vw;  /* take most of the screen width */
+    top: 55%
   }
 }
 
@@ -462,7 +462,7 @@ main{
 
 
 .element2 {
-    top: 105%;
+    top: 10%;
   
 }
 }
@@ -522,20 +522,16 @@ main{
   }
 
    .elements{
-    top: 110%;
+    top: 100%;
 
   }
 
 
 .element2 {
-    top: 160%;
+    top: 150%;
   
 }
- .tape{
-    position: absolute;
-    top: 100%;
 
-  }
 }
 
 /* Extra small devices (phones) */
